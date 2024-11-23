@@ -1,0 +1,207 @@
+:root {
+  --one: #000000;
+  --two: #3f211a48;
+  --tree: #f7f7f7;
+  --fr: #3f211a;
+  --fv: #fdf0d1;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--fv);
+}
+.navbar {
+  background-color: var(--two);
+  transition: all 0.3s ease;
+}
+.navbar-brand img {
+  border: #f7f7f7 solid 2px;
+  border-radius: 100%;
+  padding: 1px;
+}
+.navbar li a {
+  color: #f1e1cd;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navbar li a:hover {
+  color: var(--tree);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.navbar.scrolling-active {
+  background-color: #3f211a98;
+}
+
+section h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #3f211a;
+}
+
+#home {
+  background-image: radial-gradient(#3f211a48, #3f211a), url("/image/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+#home h1,
+#home p {
+  --animate-delay: 0.9s;
+}
+
+.title-hero {
+  font-size: 3rem;
+  color: var(--fv);
+  text-shadow: 1px 1px 3px 0;
+}
+.title-hero span {
+  color: var(--fr);
+  text-shadow: 1px 1px 3px 0;
+  -webkit-text-stroke-color: var(--fv);
+  -webkit-text-stroke-width: 1px;
+}
+.paragraf-hero {
+  color: var(--fv);
+}
+.about {
+  background-image: linear-gradient(#3f211a48, #fdf0d1);
+  padding: 20px 0;
+}
+.about .btn {
+  background-color: var(--one);
+  color: var(--fv);
+}
+
+.services {
+  background-image: radial-gradient(#3f211a48, #3f211a), url("/image/services-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+.service-title {
+  color: var(--fv);
+  border-bottom: var(--fv) 1px solid;
+}
+
+.card-body {
+  color: var(--fr);
+  background-color: var(--fv);
+  padding: 20px;
+}
+
+#kontak p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: start;
+  cursor: pointer;
+}
+#kontak i {
+  font-size: 1.5rem;
+  color: #3f211a;
+  font-weight: bolder;
+}
+#kontak a {
+  text-decoration: none;
+}
+#kontak iframe {
+  width: 500px;
+  height: 500px;
+  border: #3f211a solid 1px;
+  border-radius: 10px;
+}
+#kontak span {
+  color: #3f211a;
+}
+button {
+  background-color: var(--fr);
+  color: var(--fv);
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.footer {
+  /* height: 50px; */
+  background-color: var(--fr);
+  padding: 10px 0;
+}
+.footer p {
+  padding: 5px 0;
+  color: var(--fv);
+}
+.footer ul li i {
+  color: var(--fv);
+}
+
+/* Media Query */
+@media (max-width: 1300px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (max-width: 890px) {
+  html {
+    font-size: 95%;
+  }
+  #home img {
+    width: 85%;
+  }
+  .about .col {
+    /* background-color: #47180e; */
+    background-image: radial-gradient(#f1e1cd, #3f211a93), url("../img/walcol.png");
+  }
+  .about p {
+    color: #3f211a;
+    font-size: 0.7rem;
+  }
+  .services p {
+    color: #3f211a;
+    font-size: 0.7rem;
+  }
+  .services .row .col:nth-child(2) {
+    background-image: linear-gradient(#f1e1cd, #3f211a93), url("../img/walcol.png");
+  }
+  #kontak iframe {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 95%;
+  }
+  .navbar form {
+    display: none;
+  }
+  #home h1 {
+    text-align: center;
+  }
+  .about .col {
+    /* background-color: #47180e; */
+    background-image: radial-gradient(#f1e1cd, #3f211a93), url("../img/walcol.png");
+  }
+  .about p {
+    color: #3f211a;
+    font-size: 0.7rem;
+  }
+
+  #kontak p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+  }
+  #kontak iframe {
+    width: 100%;
+    max-height: 100%;
+  }
+  .services p {
+    color: #3f211a;
+    font-size: 0.7rem;
+  }
+}
